@@ -1,6 +1,6 @@
 # Cisco Infrastructure (ACFW-2.0) - Terraform Deployment
 
-This Terraform configuration provisions the Cisco infrastructure (as part of ACFW-2.0 project) in AWS. It references the `shared_infra` state for VPC, subnets, and security groups, and deploys:
+This Terraform configuration provisions the Cisco infrastructure in AWS. It references the `shared_infra` state for VPC, subnets, and security groups, and deploys:
 
 - Cisco virtual machines (with management and private interfaces)
 - A Cisco firewall with multiple ENIs
@@ -14,8 +14,8 @@ This Terraform configuration provisions the Cisco infrastructure (as part of ACF
 cisco_infra/
 ├── main.tf
 ├── variables.tf
-├── terraform.tf
-└── README.md
+├── versions.tf
+└── cisco_infra.tfvars
 ```
 
 ---
